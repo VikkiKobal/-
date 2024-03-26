@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 3</title>
+</head>
+<body>
+    <script>
+        function generateRandom(quantity, min, max) {
+            const sequence = [];
+            for (let i = 0; i < quantity; i++) {
+                const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+                sequence.push(randomNumber);
+            }
+            return sequence;
+        }
+
+        function filterArray(arr) {
+            if (arr.length === 0) {
+                return []; 
+            }
+
+            const firstElement = arr[0];
+            const result = arr.filter(num => num > firstElement); 
+
+            return result;
+        }
+
+        const randomNumbers = generateRandom(10, 1, 100); 
+        alert("Масив з випадковими числами:\n" + randomNumbers.join(", ") + "\n\nВідсортований масив:\n" + filterArray(randomNumbers).join(", "));
+    </script>
+</body>
+</html>

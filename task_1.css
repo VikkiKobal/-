@@ -1,0 +1,73 @@
+body { 
+    background-color: rgb(227, 170, 210); 
+    font-family: Arial; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 50px; 
+} 
+ 
+form { 
+    background-color: rgb(76, 5, 53); 
+    width: 700px;  
+    padding: 20px;  
+    display: flex; 
+    flex-direction: column; 
+} 
+ 
+label { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;  
+    margin-top: 5px; 
+    color: white; 
+} 
+ 
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], select { 
+    width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    margin-top: 5px; 
+} 
+ 
+.gender {
+    position: relative;
+}
+
+input[type="radio"] { 
+    position: absolute;
+    left: 70px;
+} 
+ 
+select { 
+    height: 35px; 
+    padding: 5px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+    margin-top: 5px; 
+} 
+ 
+textarea { 
+    width: 100%; 
+    padding: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+    margin-top: 5px; 
+    resize: vertical; 
+    height: 100px; 
+} 
+ 
+input[type="submit"] { 
+    background-color: #ff21c7; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    border: none; 
+    cursor: pointer; 
+    margin-top: 10px; 
+} 
+ 
+input[type="submit"]:hover { 
+    background-color: #d689b3; 
+}
